@@ -1,0 +1,298 @@
+:root   {
+    --veryDarkBlue: hsl(230, 29%, 20%);
+    --darkGrayishBlue: hsl(230, 11%, 40%);
+    --grayishBlue: hsl(231, 7%, 65%);
+    --lightGrayishBlue: hsl(207, 33%, 95%);
+    --red: hsl(0, 100%, 68%);
+    --lighterRed: hsl(0, 100%, 74%);
+}
+
+*   {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    /* border: 1px solid black; */
+    /* position: absolute; */
+}
+
+body    {
+    /* position: absolute; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+
+    overflow: hidden;
+}
+.backCon    {
+    z-index: -1;
+    background-color: var(--lightGrayishBlue);
+    position: absolute;
+    /* border: 1px solid black; */
+    border-radius: 60px;
+    width: 100vw;
+    height: 100vh;
+    left: 51%;
+    bottom: 50%;
+}
+
+.mainContainer  {
+    width: 75%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    /* padding: 3% 0 3% 0; */
+
+    /* border: 1px solid black; */
+}
+
+.topRibbon {
+    /* font-family: 'Barlow', sans-serif; */
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 15%;
+    padding: 4% 0 0 0;
+    /* border: 1px solid black; */
+}
+.ribbonItem.logoDiv    {
+    /* margin-right: auto;
+    margin-left: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navDiv  {
+    /* margin-right: 0;
+    margin-left: auto; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* padding-left:5%; */
+    padding-right: 12%;
+    /* gap:2%;  */
+}
+.navDiv *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product    {
+    margin: 0 12% 0 12%;
+    color: var(--veryDarkBlue);
+}
+.features    {
+    margin: 0 12% 0 12%;
+    color: var(--veryDarkBlue);
+
+}
+.pricing    {
+    margin: 0 12% 0 12%;
+    color: var(--veryDarkBlue);
+}
+.dot    {
+    margin: 0 12% 0 12%;
+    color: var(--grayishBlue);
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.login    {
+    margin: 0 12% 0 12%;
+    color: var(--grayishBlue);
+
+}
+.navDiv .hover  {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.burgerDiv  {
+    display: none;
+
+}
+
+.innerBody  {
+    display: flex;
+    /* border: 1px solid black; */
+    height: 85%;
+    /* padding-top: 0%; */
+    /* position: absolute; */
+}
+.innerBody .callToAction   {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    /* border: 1px solid black; */
+}
+.newMonoCon {
+    display: flex;
+    column-gap: 8px;
+
+}
+.newMonoCon .newCon    {
+    /* border: 1px solid black; */
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    color: var(--lightGrayishBlue);
+    border-radius: 15px;
+    padding: 2px 9px 2px 9px;
+    width: fit-content;
+    background-color: var(--veryDarkBlue);
+}
+.newMonoCon .monoCon    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grayishBlue);
+    font-weight: 400;
+}
+.powerCon   {
+    font-size: 66px;
+    color: var(--veryDarkBlue);
+    padding: 5px 0 10px 0;
+}
+.projectCon {
+    font-family: 'Barlow', sans-serif;
+    color: var(--darkGrayishBlue);
+    font-size: 18px;
+    width: 47%;
+    /* border: 1px solid black; */
+    padding: 15px 0 30px 0;
+}
+.demoBtnCon {
+    height: 45px;
+    display: flex;
+    /* border: 1px solid black; */
+}
+.demoBtnCon .demoBtn{
+    font-weight: 700;
+    height: 100%;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--red);
+    color: var(--lightGrayishBlue);
+}
+.demoBtnCon .demoBtn.hover{
+    cursor: pointer;
+    background-color: var(--lighterRed);
+}
+.demoBtnCon p{
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: var(--grayishBlue);
+    /* height: 100%; */
+}
+
+.illustrations  {
+    width: 50%;
+    /* border: 1px solid black; */
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* position: relative; */
+}
+.illustrationsM{
+    display: none;
+}
+.illustrations img{
+    /* border: 1px solid black; */
+    width: 260%;
+    height: auto;
+    padding-left: 20px;
+}
+
+/*********************************Mobile device*********************************/
+
+@media screen and (max-width: 600px) {
+    body    {
+
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 900px;
+    }
+    .mainContainer  {
+        width: 85%;
+    }
+    .backCon{
+        bottom: 53%;
+    }
+    .topRibbon  {
+        padding-top: 0;
+        height: 12%;
+    }
+
+    .navDiv {
+        display: none;
+    }
+    .burgerDiv  {
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        max-width: 45px;
+    }
+    .burger{
+        width: 30px;
+        height: 20px;
+    }
+    .burger.clicked {
+        display: none;
+    }
+    .close  {
+        display: none;
+    }
+    .close.clicked{
+        display: flex;
+        width: 30px;
+        height: 30px;
+    }
+    .innerBody{
+        flex-direction: column;
+    }
+    .illustrations{
+        display: none;
+    }
+    .illustrationsM {
+
+        width: 100%;
+        padding-top: 25px;
+        /* border: 1px solid black; */
+        height: 50%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        /* position: relative; */
+    }
+    .illustrationsM img {
+        width: 160%;
+        position: relative;
+        left: -24px;
+    };
+    .callToAction   {
+        /* width: 100%; */
+        height: 50%;
+    }
+}
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Project tracking intro component</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="backCon"></div>
+  <div class="mainContainer">
+    <div class="topRibbon">
+      <div class="ribbonItem logoDiv">
+        <div><img src="./images/logo.svg" alt="logo.svg"></div>
+      </div>
+      <div class="ribbonItem navDiv" id="navDiv">
+        <div class="product hoverable" id="product">PRODUCT</div>
+        <div class="features hoverable" id="features">FEATURES</div>
+        <div class="pricing hoverable" id="pricing">PRICING</div>
+        <div class="dot">.</div>
+        <div class="login hoverable" id="login">LOGIN</div>
+      </div>
+      <div class="burgerDiv">
+        <img src="./images/icon-hamburger.svg" alt="icon-hamburger.svg" class="burger clickable clicked">
+        <img src="./images/icon-close.svg" alt="icon-close.svg" class="close clickable clicked">
+      </div>
+    </div>
+    <div class="innerBody">
+      <div class="illustrationsM">
+        <img src="./images/illustration-devices.svg" alt="illustration-devices.svg">
+      </div>
+      <div class="callToAction">
+        <div class="description">
+          <div class="newMonoCon"><div class="newCon">NEW</div><div class="monoCon">MONOGRAPH DASHBOARD</div></div>
+          
+          <div class="powerCon">POWERFUL INSIGHTS<br>INTO YOUR TEAM</div>
+          <div class="projectCon">Project planning and time tracking for agile teams</div>
+        </div>
+        <div class="demoBtnCon">
+          <button class="demoBtn hoverable" id="demoBtn">SCHEDULE A DEMO</button><p>TO SEE A PREVIEW</p>
+        </div>
+      </div>
+      <div class="illustrations">
+        <img src="./images/illustration-devices.svg" alt="illustration-devices.svg">
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Malay Sarkar</a>.
+    </p>
+  </footer>
+</body>
+<script src="./script.js"></script>
+</html>
