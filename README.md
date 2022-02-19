@@ -1,3 +1,8 @@
+Github publish link:
+https://malayproject.github.io/project-tracking-intro-component-master/
+
+Github repository link:
+
 # Frontend Mentor - Project tracking intro component
 
 ![Design preview for the Project tracking intro component coding challenge](./design/desktop-preview.jpg)

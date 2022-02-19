@@ -231,9 +231,6 @@ body    {
         font-size: 16px;
     }
     body    {
-
-        overflow-x: hidden;
-        overflow-y: scroll;
         height: 900px;
         overflow: hidden;
     }
@@ -241,6 +238,7 @@ body    {
         width: 85%;
     }
     .backCon{
+        /* top: -450px; */
         bottom: 53%;
     }
     .topRibbon  {
