@@ -41,6 +41,9 @@ body    {
     left: 51%;
     bottom: 50%;
 }
+.navPopupM  {
+    display: none;
+}
 
 .mainContainer  {
     width: 75%;
@@ -116,7 +119,6 @@ body    {
 }
 .burgerDiv  {
     display: none;
-
 }
 
 .innerBody  {
@@ -126,7 +128,7 @@ body    {
     /* padding-top: 0%; */
     /* position: absolute; */
 }
-.innerBody .callToAction   {
+.callToAction   {
     width: 50%;
     height: 100%;
     display: flex;
@@ -137,7 +139,7 @@ body    {
 }
 .newMonoCon {
     display: flex;
-    column-gap: 8px;
+    column-gap: 20px;
 
 }
 .newMonoCon .newCon    {
@@ -156,6 +158,7 @@ body    {
     align-items: center;
     color: var(--grayishBlue);
     font-weight: 400;
+    letter-spacing: 7px;
 }
 .powerCon   {
     font-size: 66px;
@@ -166,7 +169,7 @@ body    {
     font-family: 'Barlow', sans-serif;
     color: var(--darkGrayishBlue);
     font-size: 18px;
-    width: 47%;
+    width: 100%;
     /* border: 1px solid black; */
     padding: 15px 0 30px 0;
 }
@@ -198,6 +201,7 @@ body    {
     align-items: center;
     margin-left: 10px;
     color: var(--grayishBlue);
+    letter-spacing: 4px;
     /* height: 100%; */
 }
 
@@ -223,11 +227,15 @@ body    {
 /*********************************Mobile device*********************************/
 
 @media screen and (max-width: 600px) {
+    *   {
+        font-size: 16px;
+    }
     body    {
 
         overflow-x: hidden;
         overflow-y: scroll;
         height: 900px;
+        overflow: hidden;
     }
     .mainContainer  {
         width: 85%;
@@ -239,7 +247,6 @@ body    {
         padding-top: 0;
         height: 12%;
     }
-
     .navDiv {
         display: none;
     }
@@ -258,26 +265,74 @@ body    {
     .burger.clicked {
         display: none;
     }
-    .close  {
+    .close.clicked  {
         display: none;
     }
-    .close.clicked{
+    .close {
         display: flex;
         width: 30px;
         height: 30px;
     }
+    .navPopupM.clicked{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        position: absolute;
+        top: 100px;
+        border: 1px solid red;
+        z-index: 1;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    .navPopupM.clicked *:hover    {
+        text-decoration: underline;
+    }
+    .navPopupM .product{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2px 0 0 0;
+        width: 80%;
+        height: 50px;
+    }
+    .navPopupM .features{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 80%;
+        height: 50px;
+    }
+    .navPopupM .pricing{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 2px 0;
+        width: 80%;
+        height: 50px;
+    }
+    .navPopupM .login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: 80%;
+        border-top: 1px solid var(--grayishBlue);
+        height: 55px;
+    }
     .innerBody{
+        /* overflow-x:; */
         flex-direction: column;
     }
     .illustrations{
         display: none;
     }
     .illustrationsM {
-
         width: 100%;
-        padding-top: 25px;
+        /* padding-top: 25px; */
         /* border: 1px solid black; */
-        height: 50%;
+        height: 40%;
         display: flex;
         justify-content: left;
         align-items: center;
@@ -287,10 +342,33 @@ body    {
         width: 160%;
         position: relative;
         left: -24px;
-    };
+    }
     .callToAction   {
-        /* width: 100%; */
+        width: 100%;
         height: 50%;
+        /* padding-top: 40px; */
+
+    }
+    .newMonoCon .newCon {
+        font-size: 16px;
+    }
+    .newMonoCon .monoCon    {
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
+    .powerCon   {
+        font-size: 40px;
+    }
+    .projectCon{
+        width: 100%;
+        font-size: 16px;
+    }
+    .demoBtnCon .demoBtn    {
+        padding: 15px 20px;
+        font-size: 14px
+    }
+    .demoBtnCon .demoBtn:active    {
+        background-color: var(--lighterRed)
     }
 }
 
